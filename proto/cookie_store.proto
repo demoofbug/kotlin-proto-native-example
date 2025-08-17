@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+// Package "cs" stands for CookieStore
+package cs;
+
+message Cookie {
+  string name = 1;
+  string value = 2;
+  string domain = 3;
+  string path = 4;
+  bool secure = 5;
+  bool httpOnly = 6;
+  int64 expirationTime = 7;
+}
+
+message CookieJar {
+  repeated Cookie cookies = 1;
+}
