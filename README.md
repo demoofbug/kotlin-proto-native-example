@@ -187,7 +187,7 @@ make
 ```
 
 #### 3. Run Python demo
-> Ensure the Kotlin/Native shared library is discoverable by Python (e.g., in LD_LIBRARY_PATH or PATH).
+> Make sure the dynamic library from `build/bin/<target>/releaseShared/` is in your library path.
 ```bash
 cd bindings/python
 python3 cookie_store_demo.py
